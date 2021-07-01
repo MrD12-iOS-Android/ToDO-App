@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PriorityVC" customModule="Exam__2" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yew-UZ-5hI">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="S40-D7-wIj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5su-NY-hcS">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <connections>
+                        <action selector="dismis:" destination="-1" eventType="touchUpInside" id="tsD-ED-054"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oG6-aj-gNE">
+                    <rect key="frame" x="0.0" y="578" width="414" height="284"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="y54-SR-BbI">
+                            <rect key="frame" x="20" y="30" width="374" height="224"/>
+                            <subviews>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrx-yO-TUS">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="vke-uz-C9P"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                    <state key="normal" title="High">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="25"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="_priority_Choosse:" destination="-1" eventType="touchUpInside" id="rGV-ee-9sx"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXK-24-Cu1">
+                                    <rect key="frame" x="0.0" y="58" width="374" height="50"/>
+                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="419-gW-ayq"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                    <state key="normal" title="Medium">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="25"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="_priority_Choosse:" destination="-1" eventType="touchUpInside" id="yWr-aP-0aZ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSf-K7-Gdu">
+                                    <rect key="frame" x="0.0" y="116" width="374" height="50"/>
+                                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="s5b-Yj-RUb"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                    <state key="normal" title="Low">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="25"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="_priority_Choosse:" destination="-1" eventType="touchUpInside" id="bo6-9W-TEZ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUe-EE-kty">
+                                    <rect key="frame" x="0.0" y="174" width="374" height="50"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="8xx-np-Rtw"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                    <state key="normal" title="None">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="25"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="_priority_Choosse:" destination="-1" eventType="touchUpInside" id="dxC-Bc-e1O"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="y54-SR-BbI" secondAttribute="bottom" constant="30" id="2RB-uG-aCZ"/>
+                        <constraint firstItem="y54-SR-BbI" firstAttribute="top" secondItem="oG6-aj-gNE" secondAttribute="top" constant="30" id="OVS-ha-GCt"/>
+                        <constraint firstAttribute="trailing" secondItem="y54-SR-BbI" secondAttribute="trailing" constant="20" id="WeN-yF-UTL"/>
+                        <constraint firstItem="y54-SR-BbI" firstAttribute="leading" secondItem="oG6-aj-gNE" secondAttribute="leading" constant="20" id="mAu-jI-SPr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5su-NY-hcS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2de-sJ-JoX"/>
+                <constraint firstItem="yew-UZ-5hI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FrZ-jw-hNR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5su-NY-hcS" secondAttribute="trailing" id="U6L-c6-VIq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oG6-aj-gNE" secondAttribute="trailing" id="Whj-jO-6Jj"/>
+                <constraint firstItem="5su-NY-hcS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XDu-nU-5kS"/>
+                <constraint firstItem="yew-UZ-5hI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="by5-lL-mfo"/>
+                <constraint firstAttribute="bottom" secondItem="5su-NY-hcS" secondAttribute="bottom" id="cPE-IQ-Qxh"/>
+                <constraint firstAttribute="bottom" secondItem="yew-UZ-5hI" secondAttribute="bottom" id="dVW-La-eKk"/>
+                <constraint firstItem="5su-NY-hcS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hVF-2T-Tkd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oG6-aj-gNE" secondAttribute="bottom" id="jGP-T6-zxG"/>
+                <constraint firstAttribute="trailing" secondItem="5su-NY-hcS" secondAttribute="trailing" id="pbm-mL-T4g"/>
+                <constraint firstAttribute="trailing" secondItem="yew-UZ-5hI" secondAttribute="trailing" id="r9F-eg-vNa"/>
+                <constraint firstItem="oG6-aj-gNE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vzO-fs-x8g"/>
+            </constraints>
+            <point key="canvasLocation" x="66.666666666666671" y="25.446428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

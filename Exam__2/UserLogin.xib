@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserLogin" customModule="Exam__2" customModuleProvider="target">
+            <connections>
+                <outlet property="_auto_remove" destination="Hkf-1B-xfZ" id="iyF-Zi-jd5"/>
+                <outlet property="_nameTF" destination="Z8n-QG-2pL" id="SB3-25-bLb"/>
+                <outlet property="_realtime" destination="Xqg-od-E9a" id="MM5-KR-7Ic"/>
+                <outlet property="_tme" destination="jKo-lI-njS" id="WeX-f7-iTE"/>
+                <outlet property="add_img" destination="1tc-t3-xru" id="nCB-I5-LoH"/>
+                <outlet property="name" destination="Z8n-QG-2pL" id="nS9-Cn-T7u"/>
+                <outlet property="profil_img" destination="GWW-MH-6To" id="90c-tv-oNk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeu-OP-lYA">
+                    <rect key="frame" x="121" y="661" width="172" height="50"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="zKL-RF-xUR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="Save">
+                        <color key="titleColor" red="0.036847762763500214" green="0.07305368036031723" blue="0.061736367642879486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="saveBtn:" destination="-1" eventType="touchUpInside" id="YMP-2Q-aS5"/>
+                    </connections>
+                </button>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Cf-uY-QIz">
+                    <rect key="frame" x="130" y="120" width="150" height="150"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GWW-MH-6To">
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                            <color key="backgroundColor" red="0.96354895830154419" green="0.98435789346694946" blue="0.98811811208724976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tc-t3-xru">
+                            <rect key="frame" x="0.0" y="103" width="150" height="47"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Add Img">
+                                <color key="titleColor" red="0.036847762763500214" green="0.07305368036031723" blue="0.061736367642879486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="add_Img:" destination="-1" eventType="touchUpInside" id="KZQ-ga-Xyu"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="GWW-MH-6To" secondAttribute="bottom" id="KyR-vv-qPu"/>
+                        <constraint firstAttribute="height" constant="150" id="NSp-dS-fHP"/>
+                        <constraint firstAttribute="width" constant="150" id="PPv-xT-NPQ"/>
+                        <constraint firstItem="GWW-MH-6To" firstAttribute="top" secondItem="3Cf-uY-QIz" secondAttribute="top" id="aga-jb-2Df"/>
+                        <constraint firstAttribute="trailing" secondItem="GWW-MH-6To" secondAttribute="trailing" id="djz-O7-OFg"/>
+                        <constraint firstItem="GWW-MH-6To" firstAttribute="leading" secondItem="3Cf-uY-QIz" secondAttribute="leading" id="frd-ng-p40"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="73"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="KOD-K4-Rh6">
+                    <rect key="frame" x="50" y="283" width="314" height="328"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SeQ-QQ-Xbl">
+                            <rect key="frame" x="0.0" y="0.0" width="314" height="57.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGg-Je-mYQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="314" height="18.5"/>
+                                    <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z8n-QG-2pL">
+                                    <rect key="frame" x="0.0" y="23.5" width="314" height="34"/>
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="name"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fIZ-Lh-XK5">
+                            <rect key="frame" x="0.0" y="91.5" width="314" height="57.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telegram nicname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXd-TQ-hib">
+                                    <rect key="frame" x="0.0" y="0.0" width="314" height="18.5"/>
+                                    <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telegram" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jKo-lI-njS">
+                                    <rect key="frame" x="0.0" y="23.5" width="314" height="34"/>
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="name"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1ho-9h-QNa">
+                            <rect key="frame" x="0.0" y="183" width="314" height="53.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Real time register profil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oy0-tY-uTO">
+                                    <rect key="frame" x="0.0" y="0.0" width="314" height="18.5"/>
+                                    <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqg-od-E9a">
+                                    <rect key="frame" x="0.0" y="23.5" width="314" height="30"/>
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="23"/>
+                                    <color key="textColor" systemColor="systemOrangeColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Zva-7V-Ltl">
+                            <rect key="frame" x="0.0" y="270.5" width="314" height="57.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of birth" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJh-BC-h9E">
+                                    <rect key="frame" x="0.0" y="0.0" width="314" height="18.5"/>
+                                    <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date of birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hkf-1B-xfZ">
+                                    <rect key="frame" x="0.0" y="23.5" width="314" height="34"/>
+                                    <color key="textColor" systemColor="systemPinkColor"/>
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemTealColor"/>
+            <constraints>
+                <constraint firstItem="KOD-K4-Rh6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="F3b-c3-QqX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zeu-OP-lYA" secondAttribute="trailing" constant="121" id="J0z-lg-3O0"/>
+                <constraint firstItem="3Cf-uY-QIz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="76" id="VmX-ds-7dI"/>
+                <constraint firstItem="zeu-OP-lYA" firstAttribute="top" secondItem="KOD-K4-Rh6" secondAttribute="bottom" constant="50" id="a99-gc-ola"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KOD-K4-Rh6" secondAttribute="trailing" constant="50" id="cPF-7G-ffU"/>
+                <constraint firstItem="zeu-OP-lYA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="121" id="h8p-wg-Tmz"/>
+                <constraint firstItem="KOD-K4-Rh6" firstAttribute="top" secondItem="3Cf-uY-QIz" secondAttribute="bottom" constant="13" id="nSJ-c4-hel"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3Cf-uY-QIz" secondAttribute="trailing" constant="134" id="xf6-Z6-lvS"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="18.75"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

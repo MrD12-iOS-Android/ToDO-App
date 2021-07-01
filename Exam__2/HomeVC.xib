@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="Exam__2" customModuleProvider="target">
+            <connections>
+                <outlet property="searchView" destination="fAz-lb-E8D" id="PwH-hh-D1J"/>
+                <outlet property="table" destination="crL-IH-0Hp" id="Ycr-6v-khM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="crL-IH-0Hp">
+                    <rect key="frame" x="0.0" y="159.5" width="414" height="702.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJR-ps-DIt">
+                    <rect key="frame" x="314" y="762.5" width="80" height="79"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="EOU-HO-D1S"/>
+                        <constraint firstAttribute="height" constant="80" id="Nc0-5i-wez"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="plus.circle" catalog="system"/>
+                    <connections>
+                        <action selector="btn:" destination="-1" eventType="touchUpInside" id="NLV-TK-dXR"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uco-RY-UP6">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="159.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My To-Do List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tda-wD-Wry">
+                            <rect key="frame" x="100" y="65" width="214" height="38.5"/>
+                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="27"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="fAz-lb-E8D">
+                            <rect key="frame" x="0.0" y="103" width="414" height="56"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Tda-wD-Wry" secondAttribute="trailing" constant="100" id="7Ph-oD-baQ"/>
+                        <constraint firstAttribute="trailing" secondItem="fAz-lb-E8D" secondAttribute="trailing" id="FhE-Xk-ux8"/>
+                        <constraint firstAttribute="bottom" secondItem="Tda-wD-Wry" secondAttribute="bottom" constant="56" id="Gfx-Sm-HR4"/>
+                        <constraint firstItem="Tda-wD-Wry" firstAttribute="leading" secondItem="uco-RY-UP6" secondAttribute="leading" constant="100" id="Lwn-cf-bX3"/>
+                        <constraint firstAttribute="bottom" secondItem="fAz-lb-E8D" secondAttribute="bottom" constant="0.5" id="ffu-KN-LDX"/>
+                        <constraint firstItem="fAz-lb-E8D" firstAttribute="leading" secondItem="uco-RY-UP6" secondAttribute="leading" id="rCn-3P-GSu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="crL-IH-0Hp" secondAttribute="bottom" id="3lv-fG-NMV"/>
+                <constraint firstItem="crL-IH-0Hp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="B0D-ta-nzV"/>
+                <constraint firstItem="uco-RY-UP6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GAe-tV-Yyh"/>
+                <constraint firstItem="uco-RY-UP6" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="GYa-m4-a3f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="crL-IH-0Hp" secondAttribute="trailing" id="Rzs-EL-a15"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JJR-ps-DIt" secondAttribute="trailing" constant="20" id="aAJ-E6-Vdq"/>
+                <constraint firstItem="Tda-wD-Wry" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="21" id="dEz-XI-i7z"/>
+                <constraint firstItem="crL-IH-0Hp" firstAttribute="top" secondItem="uco-RY-UP6" secondAttribute="bottom" id="mtb-kU-0fj"/>
+                <constraint firstItem="uco-RY-UP6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rbs-mt-x6G"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JJR-ps-DIt" secondAttribute="bottom" constant="20" id="soS-FX-Em7"/>
+            </constraints>
+            <point key="canvasLocation" x="66.666666666666671" y="95.758928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
